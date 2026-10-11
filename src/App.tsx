@@ -6,7 +6,7 @@ import {
   Headphones, LayoutDashboard, LogIn, LogOut, Menu, Package, Settings,
   ShieldCheck, Sparkles, WandSparkles, X, Zap
 } from "lucide-react";
-import { isSupabaseConfigured, supabase } from "./lib/supabase";
+import { isSupabaseConfigured, supabase } from "./lib/supabase.ts";
 
 type Page = "Dashboard" | "Bypass Music" | "Config" | "Spoofer" | "Skybox" | "Editor" | "Asset Manager" | "Obfuscator" | "UGC" | "History" | "Info";
 const nav: { label: Page; icon: typeof LayoutDashboard; section: string }[] = [
